@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Card</title>
+    <link rel="stylesheet" href="profile.css">
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="profile-card">
+        <img src="IMG_20240720_222923.jpg" alt="Profile Picture" class="profile-picture" data-testid="profilePicture">
+        <h1 class="full-name" data-testid="fullName">Elijah Macaulay</h1>
+        <h2 class="job-title" data-testid="jobTitle">Frontend Developer</h2>
+        <p class="short-bio" data-testid="shortBio">
+            Passionate frontend developer with 1 years of experience of building website and exploring new web technologies.Am
+            Proficient in JavaScript, React, Css and bootstrap. Always eager to learn new technologies and solve complex problems.
+        </p>
+        <p class="current-location" data-testid="currentLocation">📍 Port Harcourt, Nigeria</p>
+        <p class="email-address" data-testid="emailAddress">📧 elijahmacaulay33@gmail.com</p>
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://www.linkedin.com/in/elijah-macaulay-678b6b280" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin" style=" color: #0077B5;"></i>
+            </a>
+            <a href="https://github.com/eli00412" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/Elijah67525483?t=wBhsTDN1KYKRLbMwKlGTWw&s=08" target="_blank" aria-label="Twitter">
+                <i class="fab fa-Solid fa-xmark" style=" color:#0077B5 ;" ></i>
+            </a>
+            <a href="https://www.instagram.com/elijah.macaulay.75?igsh=aGV5b2JmbHh0cTVo" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram" style="color: #E4405F;"></i>
+            </a>
+        </div>
+        <p class="current-time-utc" data-testid="currentTimeUTC"></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+function updateUTCTime() {
+    const now = new Date();
+    const utcTime = now.toUTCString();
+    document.querySelector('[data-testid="currentTimeUTC"]').textContent = `Current Time (UTC): ${utcTime}`;
+}
+
+// Update the UTC time immediately and then every second
+updateUTCTime();
+setInterval(updateUTCTime, 1000);
+
+
+
+
+    </script>
+</body>
+</html>

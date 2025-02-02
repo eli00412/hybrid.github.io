@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    border: 0px;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    
+}
+.header{
+    color: black;
+    text-align: center;
+    padding: 5px;
+    text-shadow: 1px 1px 1px;
+    
+
+}
+.block{
+    border: 2px solid;
+    padding: 10px;
+    text-align: center;
+    background-color:#0A192F ;
+    color:#ffffffce ;
+    font-weight: 700;
+    font-size: large;
+    
+}
+.c{
+    list-style-type: none;
+}
+/*@media(max-width:425px){
+    .block{
+        height: 50vh;
+    }
+}
+    */
+    span{
+        color:#ffa600f4 ;
+    }
+    a{
+        color: rgba(172, 255, 47, 0.877);
+    }
